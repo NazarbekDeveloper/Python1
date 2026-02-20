@@ -17,7 +17,9 @@ x = (float)(input("x = "))
 x = (int)(x*10)
 d = x % 10
 print("d = ",d)
+
 '''
+
 # 3-misol
 # a)
 '''
@@ -53,7 +55,7 @@ else:
 '''
 
 # 4-misol
-
+'''
 a = 1.5
 x = float(input("x = "))
 if x < -3:
@@ -63,6 +65,40 @@ elif -3 <= x and x <= 3:
 else:
     y = (a + 3) - math.cos(math.pi * x)
 print("y = ",y)
+'''
+# n=int(input("n = "))
+# a = True
+# i = 2
+# if n == 1:
+#     a = False
+# else:
+#     while i <= math.sqrt(n):
+#         if n%i==0:
+#             a = False
+#             break
+#         i = i + 1
+# if(a):
+#     print("Tub")
+# else:
+#     print("Tub emas")
+
+## ichma ich sum
+
+a = int(input("a = "))
+b = int(input("b = "))
+n = int(input("n = "))
+m = int(input("m = "))
+S = 0
+s = 0
+for i in range(1,n+1):
+    for j in range(1,m+1):
+        try:
+            s += (a+i)/(b-j)
+        except ZeroDivisionError:
+            print("0 ga bo'lish sodir bo'ldi")
+    S += s
+    s = 0
+print("SUM = ",S)
 
 
 
